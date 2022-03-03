@@ -3,9 +3,9 @@ import { useSelector } from "react-redux"
 import { oneLess, oneMore } from "../../store/modules/action"
 
 export const Operations = () => {
-    const num = useSelector((state)=>state.num)
-    const dispatch = useDispatch
-
+    const num = useSelector((state)=>state.num);
+    const dispatch = useDispatch();
+    
     const handleLess = () => {
         dispatch(oneLess())
     }
